@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+header nav{
+
+    font-size: 25px;
+    padding: 15px 25px;
+}
+
+header nav a{
+    padding: 30px 40px;
+    color: #2F0EB3;
+    text-decoration: none;
+}
+
+/*Buscador contenido*/
+
+#ctn-icon-search{
+    position: absolute;
+    right: 490px;
+    top: 18px;
+    height: 100%;
+    display: flex;
+}
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #2F0EB3;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: white;
+}
+
+#ctn-bars-search{
+    position: fixed;
+    top: -80px;
+    width: 100%;
+    background: black;
+    padding: 20px;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background: black;
+    color: #BFCFD9;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#box-search{
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: black;
+    display: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #BFCFD9;
+    padding: 12px 20px;
+
+}
+
+#box-search li a:hover{
+    color: #2F0EB3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+}
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 305px;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+
+                        
+
+                                /* ESLOGAN */
+.slogan{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 350px;
+}
+.logo{
+
+    font-family: 'Jockey One', sans-serif;
+    font-size: 140px;
+    color:#BFCFD9;
+    text-shadow: rgb(255, 255, 255) 3px 3px ;
+    margin-bottom: 30px;
+
+}
+.texto{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BFCFD9;
+}
+.registro{
+    font-family:'Staatliches', cursive ;
+    background-color:#2F0EB3 ;
+    color: #BFCFD9;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+header nav a:hover{
+    border-radius: 30px;
+    background-color: rgba(137, 43, 226, 0.281);
+
+}

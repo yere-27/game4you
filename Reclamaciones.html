@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reclamaciones</title> 
+  <link rel="stylesheet" type="text/css" href="css/Reclamaciones.style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+<style>
+  .social-icon{
+      background-image: url(imagenes/FacebookBlanco.png);
+  }
+  .social-icon:nth-of-type(2){
+      background-image: url(imagenes/InstagramBlanco.png);
+  }
+  .social-icon:nth-of-type(3){
+      background-image: url(imagenes/TwitterBlanco.png);
+  }
+  .social-icon:nth-of-type(4){
+      background-image: url(imagenes/LinkedinBlanco.png);
+  }  
+</style>
+  
+</head>
+
+<header>
+    <nav>
+       <a href="menu.html">Inicio</a>
+       <a href="PS4PS5.html">PS4/PS5</a>
+       <a href="XBOX.html">Xbox360/XboxSeriesX</a>
+       <a href="PC.html">PC</a>
+    </nav>
+</header><br><br><br><br>
+
+  
+  <body style="background-image: url(imagenes/fondo-reclamacion.gif);background-size: 100%;">
+  <section class="home">
+    <div class="in-flex">
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <center><h1 style="font-family: 'Staatliches', cursive ;">Reclamaciones</h1></center>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo.</h3>
+            <form action="submeter-formulario.php" method="post">       
+              <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input class="input1" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                  <label for="telefone" class="colocar_telefono">Apellido
+                  </label>
+                    <input class="input1" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu apellido">
+
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input class="input1" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input class="input1" type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">                
+                <center><button class="button1" type="submit" name="enviar_formulario" id="enviar">Enviar</button> </center>        
+            </form></div>
+    </div>  
+    </div>
+  <!--Aqui ira las preguntas frecuentes-->
+    <div class="in-flex">
+      <div id="preguntas">
+        <h1>Preguntas Frecuentes</h1><br>
+        <b>¿Se podrá pagar con tarjeta de Crédito / Débito?</b> <br>
+        <br>
+        Si, es una de las ideas que estamos a punto de acabar.<br>
+        <br>
+        <b>¿Hacen delivery fuera de lima?</b> <br>
+        <br>
+        Es una de nuestras metas mas importantes que queremos llevar a cabo, muy pronto estaremos en tu departamento.<br>
+        <br>
+        <b>¿Como me logeo?</b><br>
+        <br>
+        En la página principal encontrarás la opción "Registrarse", ahi podrás unirte a nosotros.<br>
+        <br>
+        <b>¿Que beneficios tendré si me convierto en colaborador?</b><br>
+        <br>
+        En forma de agradecimientos te obsequiaremos regalos, ya sea cupones de juegos, merchadaising oficial, etc.<br>
+        <br>
+        <b>¿Que días son las ofertas?</b><br>
+        <br>
+        Muy pronto tendremos una agenda en donde estará la información para que no te pierdas de los días.
+      </div> 
+
+   <div>
+  <footer>
+     
+        
+      <div class="social-icons-container">
+          <a href="https://www.facebook.com/Game4you-103188148785153" class="social-icon"  target="_blank"></a>
+          <a href="https://www.instagram.com/game4u_/" class="social-icon"  target="_blank"></a>
+          <a href="" class="social-icon"  target="_blank"></a>
+          <a href="" class="social-icon"  target="_blank"></a>
+      </div>
+      <ul class="footer-menu-container">
+          <li class="menu-item">Legal</li>
+          <li class="menu-item">Cookies</li>
+          <li class="menu-item">Privacy</li>
+          <li class="menu-item">Shipping</li>
+          <li class="menu-item">Refunds</li>
+      </ul>
+      <span class="copyright">&copy;2021, Game4U. All rights reserved.</span>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+<script src="js/Chatbot-javaS.js"></script>    
+</div></div></section>
+</body>
+</html>

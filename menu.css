@@ -1,0 +1,284 @@
+/*GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+
+/* css reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(imagenes/fondo-inicio.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+/* NAVIGATION */
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bar-btn {
+    font-size: 15px;
+    color: #ffff;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    right: 710px;
+    background: rgb(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: #ffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(248, 8, 8);
+    transition: .3s;
+
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display:block ;
+
+}
+
+
+/*Buscador contenido*/
+
+#ctn-icon-search{
+    position: absolute;
+    right: 710px;
+    top: 40px;
+    height: 100%;
+    display: flex;
+}
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: rgb(248, 8, 8);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: white;
+}
+
+#ctn-bars-search{
+    position: fixed;
+    top: -80px;
+    width: 100%;
+    background: rgb(0, 0, 0, .95);
+    padding: 20px;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background: black;
+    color: #BFCFD9;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#box-search{
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: black;
+    display: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #BFCFD9;
+    padding: 12px 20px;
+
+}
+
+#box-search li a:hover{
+    color: #2F0EB3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+}
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 305px;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+
+/* BANNER TEXT */
+
+.banner-text {
+    position: absolute;
+    top: 380px;
+    left: 750px;
+    margin-top: 10px;
+    padding: 20 30px;
+    text-align: center;
+    color: #ffff;
+}
+
+.banner-text h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-text span{
+    color: rgb(248, 8, 8);
+}
+
+.banner-text h2 {
+    font-size: 50px;
+}
+
+.button1{
+    margin-right: 20px;
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: white;
+    color: rgb(248, 8, 8);
+    transition: .5s;
+}
+
+.button2 {
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+}
+
+.button2:hover{
+    background-color: rgb(248, 8, 8);
+    color: #ffff;
+    transition: .5s;
+}
+
+/* RESPONSIVE FOR DESKTOP */
+
+@media screen and (min-width: 768px){
+    .logo {
+        margin-left: 200px;
+    }
+
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .banner-text h1 {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+
+    .banner-text h2 {
+        font-size: 20px;
+    }
+}
+.registro{
+    font-family:'Staatliches', cursive ;
+    background-color:#2F0EB3 ;
+    color: #BFCFD9;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+header nav a:hover{
+    border-radius: 30px;
+    background-color: rgba(137, 43, 226, 0.281);
+
+}
